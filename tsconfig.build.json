@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": false, "outDir": "dist", "rootDir": "." },
+  "include": ["cli.ts", "types.ts", "commands/**/*.ts", "db/**/*.ts", "utils/**/*.ts"],
+  "exclude": ["node_modules", "dist", "tests", "scripts", "vitest.config.ts"]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "task-cli",
+  "version": "0.1.0",
+  "description": "Gestión de tareas personales desde la terminal",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "bin": {
+    "task-cli": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx cli.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "prepack": "npm run build",
+    "benchmark": "tsx scripts/benchmark.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "cli-table3": "0.6.5",
+    "commander": "15.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "24.19.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  }
+}

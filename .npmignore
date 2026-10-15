@@ -1,0 +1,11 @@
+tests/
+scripts/
+specs/
+.specify/
+.opencode/
+.env*
+*.db*
+*.log
+coverage/
+tsconfig*.json
+vitest.config.ts
